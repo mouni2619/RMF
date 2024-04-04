@@ -1,0 +1,66 @@
+.signup__bg {
+    background-image: url(https://visme.co/blog/wp-content/uploads/2020/02/header.gif);
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+@media (max-width: 413px) {
+    
+    .signup__bg {
+        height: 500px;
+        width: 370px;
+        
+    }
+}
+@media (max-width: 374px) {
+    
+    .signup__bg {
+        height: 500px;
+        width: 300px;
+        
+    }
+}
+@media (max-width: 334px) {
+    
+    .signup__bg {
+        height: 500px;
+        width: 250px;
+        
+    }
+}
+@media (min-width: 576px) {
+    
+    .signup__bg {
+        height: 500px;
+        width: 370px;
+        
+    }
+}
+
+.signup-profile-pic__container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.signup-profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    object-fit: cover;
+    height: 100px;
+}
+
+.add-picture-icon {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: green;
+    background: white;
+    cursor: pointer;
+    z-index: 99;
+}

@@ -1,0 +1,8 @@
+.download-option {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.download-option:hover {
+    background-color: lightgray;
+}

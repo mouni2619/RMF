@@ -1,0 +1,195 @@
+.home-container {
+  padding: 20px;
+}
+
+.home-container section {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .home-container {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .home-container {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .home-container {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .home-container {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-container {
+    padding: 30px;
+  }
+}
+
+
+.examples {
+
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.example {
+  margin-bottom: 20px;
+}
+
+.example-code {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.examples .example {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #d0cccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.examples .example code {
+  display: block;
+  white-space: pre;
+  background-color: #f8f8f8;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.examples .example p {
+  margin-top: 5px;
+}
+
+.examples img {
+  max-width: 100%;
+  height: auto;
+}
+
+.example-code {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d7e8ef;
+  overflow-x: auto;
+  /* Add this line to enable horizontal scrolling */
+}
+
+.examples .example code {
+  display: block;
+  white-space: pre-wrap;
+  /* Change to pre-wrap to wrap long lines */
+  word-wrap: break-word;
+  /* Ensure long words break onto the next line */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://img.freepik.com/free-vector/white-background-with-shiny-lines-design_1017-28446.jpg");
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.examples .example p {
+  margin-top: 5px;
+  word-wrap: break-word;
+  /* Ensure long words break onto the next line */
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #494747;
+  color: #fff;
+}
+
+.footer {
+  background-color: #494747;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact {
+  margin-top: 10px;
+  color: #d31717;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+}
+
+.welcome-title {
+  text-align: center;
+}
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to right, red, rgb(224, 73, 39), rgb(230, 93, 52), green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+.Get Started {
+  text-Decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-Color: green;
+  background-Image: url("https://i.makeagif.com/media/5-05-2016/nJm__7.gif");
+  color: #fff;
+  border: none;
+  border-Radius: 5px;
+  cursor: pointer;
+  text-Align: center;
+  text-Decoration: none;
+  font-Size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
