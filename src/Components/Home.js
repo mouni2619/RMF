@@ -173,7 +173,7 @@ function Home() {
                 </>
               )}
               {section.button && (
-                <Button variant="contained" href={section.button.link} className='Get Started'>
+                <Button variant="contained" href={section.button.link} className='GetStarted'>
                   {section.button.label}
                 </Button>
               )}
