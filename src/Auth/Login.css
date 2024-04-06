@@ -1,13 +1,4 @@
-.login__bg {
-  background-image: url(https://cdn.dribbble.com/users/1172503/screenshots/4505740/login-form.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  width: 390px;
-  position: relative;
 
-}
 
 .login__text {
   position: absolute;
@@ -20,42 +11,6 @@
   font-weight: bold;
 }
 
-
-@media (max-width: 413px) {
-
-  .login__bg {
-    height: 500px;
-    width: 370px;
-
-  }
-}
-
-@media (max-width: 374px) {
-
-  .login__bg {
-    height: 500px;
-    width: 300px;
-
-  }
-}
-
-@media (max-width: 334px) {
-
-  .login__bg {
-    height: 500px;
-    width: 250px;
-
-  }
-}
-
-@media (min-width: 576px) {
-
-  .login__bg {
-    height: 500px;
-    width: 370px;
-
-  }
-}
 
 
 .password {
@@ -194,4 +149,56 @@ body {
   background-image: url(https://media1.giphy.com/media/MyWrJJIdAfoJuEPlLP/200w.gif?cid=6c09b952batojfjbb2vtjdkkvcxr56y7lcdio7hu7i51nbnh&ep=v1_gifs_search&rid=200w.gif&ct=g);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.login__bg {
+  background-image: url(https://cdn.dribbble.com/users/1172503/screenshots/4505740/login-form.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .login__bg {
+      height: 200px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .login__bg {
+      height: 250px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .login__bg {
+      height: 300px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .login__bg {
+      height: 350px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .login__bg {
+      height: 400px;
+  }
+}
+
+/* Extra extra large devices (larger laptops and desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .login__bg {
+      height: 450px;
+  }
 }

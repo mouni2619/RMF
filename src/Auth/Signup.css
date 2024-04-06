@@ -1,44 +1,4 @@
-.signup__bg {
-    background-image: url(https://visme.co/blog/wp-content/uploads/2020/02/header.gif);
-    height: 500px;
-    width: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-@media (max-width: 413px) {
-    
-    .signup__bg {
-        height: 500px;
-        width: 370px;
-        
-    }
-}
-@media (max-width: 374px) {
-    
-    .signup__bg {
-        height: 500px;
-        width: 300px;
-        
-    }
-}
-@media (max-width: 334px) {
-    
-    .signup__bg {
-        height: 500px;
-        width: 250px;
-        
-    }
-}
-@media (min-width: 576px) {
-    
-    .signup__bg {
-        height: 500px;
-        width: 370px;
-        
-    }
-}
+
 
 .signup-profile-pic__container {
     width: 100px;
@@ -63,4 +23,57 @@
     background: white;
     cursor: pointer;
     z-index: 99;
+}
+
+
+.signup__bg {
+    background-image: url(https://visme.co/blog/wp-content/uploads/2020/02/header.gif);
+
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .signup__bg {
+        height: 200px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    .signup__bg {
+        height: 250px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .signup__bg {
+        height: 300px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .signup__bg {
+        height: 350px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .signup__bg {
+        height: 400px;
+    }
+}
+
+/* Extra extra large devices (larger laptops and desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .signup__bg {
+        height: 450px;
+    }
 }

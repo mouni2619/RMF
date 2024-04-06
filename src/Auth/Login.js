@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button, Form, InputGroup } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Form, InputGroup, Spinner } from "react-bootstrap";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
@@ -15,6 +15,7 @@ const formValidationSchema = yup.object({
 
 function Login() {
   const [formState, setFormState] = useState("success");
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -25,25 +26,24 @@ function Login() {
     },
     validationSchema: formValidationSchema,
     onSubmit: async (values) => {
+      setLoading(true);
       const data = await fetch(`${API}/users/login`, {
         method: "POST",
         body: JSON.stringify(values),
         headers: { "Content-type": "application/json" },
       });
+      setLoading(false);
       if (data.status === 401) {
         console.log("ERROR");
         setFormState("error");
       } else {
         const result = await data.json();
-        // console.log("Success", result);
         window.localStorage.setItem("token", result.token);
         window.localStorage.setItem("email", result.email);
-
         navigate("/dashboard/home");
       }
     },
   });
-
 
   return (
     <Container >
@@ -103,8 +103,9 @@ function Login() {
                   <Button
                     variant={formState === "error" ? "danger" : "primary"}
                     type="submit"
+                    disabled={loading}
                   >
-                    {formState === "error" ? "Retry" : "Login"}
+                    {loading ? <Spinner animation="border" size="sm" /> : formState === "error" ? "Retry" : "Login"}
                   </Button>
                   <Link to="/forgotpassword" className="link">
                     Forgot Password
@@ -116,7 +117,7 @@ function Login() {
                   </p>
                 </div>
                 <div>
-                  <p>For Testing</p>
+                  <p className="text-danger">Demo User</p>
                   <p>Email:mounikaadada744@gmail.com</p>
                   <p>Password:Mounika@744</p>
                 </div>
