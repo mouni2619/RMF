@@ -1,3 +1,7 @@
+## Welcome to React Markdown Viewer Project
+
+The ReactMarkdown project offers users a seamless experience across devices, with all user records securely saved in a MongoDB database. Users can register, log in, and If they forget their password, they can reset it via email by clicking the link they receive and resetting the password. Upon logging in, they are directed to the home page, where they can create new projects. The project creation form includes  fields like title, date, markdown input and output. The markdown input field have various functionalities such as copying, clearing, saving to PC, and uploading options. Users can preview their Markdown content and download it as a PDF or HTML file. After submitting a project, the submission time is automatically recorded. In the "My Projects" section, users can view a list of all their projects, each displaying the title, creation date, and time. They can easily edit, view, or delete any of their projects. The application is designed to be user-friendly and responsive, with styling done using MUI Bootstrap to ensure a consistent experience across different devices. All user records, including project details and authentication data, are securely saved in a MongoDB database, providing a scalable and efficient way to store and retrieve user data. Finally, users can log out when they are finished using the application.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
